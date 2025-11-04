@@ -14,10 +14,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <div class="pageHeader">
     <!--メインコンテンツ-->
-    <h1>
-      <img src="C:\VueProjects\assignment2\public\space_iss.png" alt="issImg" class="titleIcon" />
-      国際宇宙ステーション(ISS) 現在地取得
-    </h1>
+    <h1>国際宇宙ステーション(ISS) 現在地取得</h1>
     <nav>
       <RouterLink to="/">
         <v-btn class="btn2" size="x-large"> ①ISS位置情報取得 </v-btn>
