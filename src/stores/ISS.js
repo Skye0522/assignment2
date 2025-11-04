@@ -17,7 +17,9 @@ export const useIssStore = defineStore('Iss', {
       this.loading = true //ローディング表示
       try {
         // ISSAPI呼び出し
-        const res = await axios.get('http://api.open-notify.org/iss-now.json')
+        const res = await axios.get(
+          'https://api.allorigins.win/raw?url=http://api.open-notify.org/iss-now.json',
+        )
         this.lat = res.data.iss_position.latitude
         this.lon = res.data.iss_position.longitude
       } catch (error) {
